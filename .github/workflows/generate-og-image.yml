@@ -1,0 +1,33 @@
+name: Generate OG Image PNG
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-og-image:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install librsvg (rsvg-convert)
+        run: sudo apt-get update && sudo apt-get install -y librsvg2-bin
+
+      - name: Convert SVG to PNG (1200x630)
+        run: |
+          if [ -f assets/og-image.svg ]; then
+            rsvg-convert -w 1200 -h 630 assets/og-image.svg -o assets/og-image.png
+          else
+            echo "assets/og-image.svg tidak ditemukan"; exit 1
+          fi
+
+      - name: Commit PNG back to repo
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore(og): auto-generate og-image.png"
+          file_pattern: assets/og-image.png
