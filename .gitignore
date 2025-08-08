@@ -1,0 +1,12 @@
+# Sistem
+.DS_Store
+Thumbs.db
+
+# Editor/IDE
+.vscode/
+.idea/
+
+# Build/Cache (jika suatu saat pakai tooling)
+dist/
+build/
+node_modules/
