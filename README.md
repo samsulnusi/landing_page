@@ -39,7 +39,7 @@ Akan aktif setelah GitHub Pages di-enable:
 
 - HTML5 semantik
 - CSS3 (tanpa framework)
-- JavaScript vanilla (tanpa library)
+- JavaScript (tanpa library)
 
 ---
 
@@ -76,7 +76,7 @@ Opsi 1 — Settings Pages (paling mudah):
 - Build and deployment:
   - Source: `Deploy from a branch`
   - Branch: `main`
-  - Folder: `/` root
+  - Folder: `/` landing_page
 - Simpan dan tunggu 1–3 menit hingga URL aktif
 
 Opsi 2 — GitHub Actions (opsional):
