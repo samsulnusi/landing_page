@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Lumina Favicon</title>
+  <desc id="desc">Ikon gradien berbentuk permata dengan kilau bintang</desc>
+  <defs>
+    <linearGradient id="g" x1="6" y1="4" x2="26" y2="28" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0ea5e9"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="1.2" result="blur"/>
+      <feOffset dy="1" result="off"/>
+      <feMerge>
+        <feMergeNode in="off"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Permata/biji air -->
+  <path d="M16 3.5c1.5 3.3 8.5 8.4 8.5 13.1 0 4.7-3.8 8.5-8.5 8.5s-8.5-3.8-8.5-8.5c0-4.7 7-9.8 8.5-13.1z" fill="url(#g)" filter="url(#soft)"/>
+
+  <!-- Kilau bintang -->
+  <path d="M22.5 10.2l1.1 2.2 2.2 1.1-2.2 1.1-1.1 2.2-1.1-2.2-2.2-1.1 2.2-1.1 1.1-2.2z" fill="#ffffff" fill-opacity="0.9"/>
+</svg>

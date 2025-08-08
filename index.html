@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lumina — Landing Page Modern, Cepat, dan Responsif</title>
+    <meta
+      name="description"
+      content="Lumina adalah platform yang membantu Anda meluncurkan produk lebih cepat dengan analitik real-time, automasi cerdas, dan antarmuka intuitif. Coba gratis hari ini."
+    />
+    <meta
+      name="keywords"
+      content="landing page, SaaS, startup, modern, responsif, dark mode, animasi"
+    />
+    <meta name="author" content="Lumina" />
+    <meta name="theme-color" content="#0ea5e9" />
+    <link rel="icon" href="assets/favicon.svg" />
+
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="Lumina — Tingkatkan Pertumbuhan Produk Anda"
+    />
+    <meta
+      property="og:description"
+      content="Platform modern untuk meluncurkan dan mengembangkan produk dengan cepat."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://example.com" />
+    <meta
+      property="og:image"
+      content="https://example.com/assets/og-image.png"
+    />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Lumina — Tingkatkan Pertumbuhan Produk Anda"
+    />
+    <meta
+      name="twitter:description"
+      content="Platform modern untuk meluncurkan dan mengembangkan produk dengan cepat."
+    />
+    <meta
+      name="twitter:image"
+      content="https://example.com/assets/og-image.png"
+    />
+
+    <link rel="preload" href="./style.css" as="style" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Lewati ke Konten</a>
+    <noscript>
+      <div class="noscript">
+        JavaScript dinonaktifkan. Beberapa animasi dan fitur tidak akan
+        berfungsi.
+      </div>
+    </noscript>
+
+    <header class="site-header" aria-label="Header">
+      <div class="container nav-wrap">
+        <a href="#" class="brand" aria-label="Beranda Lumina">
+          <img
+            src="assets/logo.svg"
+            alt=""
+            class="brand-logo"
+            width="28"
+            height="28"
+          />
+          <span class="brand-name">Lumina</span>
+        </a>
+
+        <nav class="site-nav" aria-label="Navigasi utama">
+          <ul class="nav-list" id="nav-list">
+            <li><a href="#home">Beranda</a></li>
+            <li><a href="#features">Fitur</a></li>
+            <li><a href="#product">Produk</a></li>
+            <li><a href="#pricing">Harga</a></li>
+            <li><a href="#testimonials">Testimoni</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Kontak</a></li>
+          </ul>
+        </nav>
+
+        <div class="actions">
+          <button class="btn-icon" id="theme-toggle" aria-label="Ganti tema">
+            <span class="icon-sun" aria-hidden="true"></span>
+          </button>
+          <a
+            class="btn btn-ghost"
+            href="https://github.com/username/repo"
+            target="_blank"
+            rel="noopener"
+            >GitHub</a
+          >
+          <button class="hamburger" id="hamburger" aria-label="Buka menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- Hero -->
+      <section id="home" class="section hero">
+        <div class="container grid-2">
+          <div class="hero-text reveal">
+            <h1>Tingkatkan Pertumbuhan Produk Anda dengan Lumina</h1>
+            <p>
+              Platform modern untuk meluncurkan dan mengembangkan produk lebih
+              cepat. Dapatkan analitik real-time, automasi cerdas, dan antarmuka
+              intuitif.
+            </p>
+            <div class="cta">
+              <a href="#pricing" class="btn btn-primary">Mulai Gratis</a>
+              <a href="#product" class="btn btn-secondary">Lihat Demo</a>
+            </div>
+            <div class="trust">
+              <span>Dipercaya oleh tim dari</span>
+              <ul class="logos">
+                <li aria-label="Nova"><span class="logo-dot"></span>Nova</li>
+                <li aria-label="Orion"><span class="logo-dot"></span>Orion</li>
+                <li aria-label="Astra"><span class="logo-dot"></span>Astra</li>
+                <li aria-label="Helix"><span class="logo-dot"></span>Helix</li>
+              </ul>
+            </div>
+          </div>
+          <div class="hero-visual reveal">
+            <img
+              src="assets/hero-illustration.svg"
+              alt="Ilustrasi dashboard Lumina"
+              width="640"
+              height="480"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Features -->
+      <section id="features" class="section features">
+        <div class="container">
+          <header class="section-header reveal">
+            <h2>Fitur Unggulan</h2>
+            <p>
+              Semua yang Anda butuhkan untuk meluncurkan dan mengembangkan
+              produk dengan percaya diri.
+            </p>
+          </header>
+
+          <div class="features-grid">
+            <article class="feature-card reveal">
+              <div class="icon icon-speed" aria-hidden="true"></div>
+              <h3>Performa Cepat</h3>
+              <p>Pemuatan instan dan interaksi mulus tanpa hambatan.</p>
+            </article>
+            <article class="feature-card reveal">
+              <div class="icon icon-analytics" aria-hidden="true"></div>
+              <h3>Analitik Real-time</h3>
+              <p>Pantau metrik utama dan ambil keputusan berbasis data.</p>
+            </article>
+            <article class="feature-card reveal">
+              <div class="icon icon-automation" aria-hidden="true"></div>
+              <h3>Automasi Pintar</h3>
+              <p>
+                Hemat waktu dengan alur kerja otomatis yang dapat disesuaikan.
+              </p>
+            </article>
+            <article class="feature-card reveal">
+              <div class="icon icon-security" aria-hidden="true"></div>
+              <h3>Keamanan Kelas Dunia</h3>
+              <p>Enkripsi kuat dan kepatuhan standar industri.</p>
+            </article>
+            <article class="feature-card reveal">
+              <div class="icon icon-customize" aria-hidden="true"></div>
+              <h3>Mudah Dikustomisasi</h3>
+              <p>Sesuaikan branding, warna, dan komponen UI dengan cepat.</p>
+            </article>
+            <article class="feature-card reveal">
+              <div class="icon icon-support" aria-hidden="true"></div>
+              <h3>Dukungan Responsif</h3>
+              <p>Tim kami siap membantu kapan pun Anda butuhkan.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Product -->
+      <section id="product" class="section product">
+        <div class="container grid-2">
+          <div class="product-visual reveal">
+            <div class="screenshot">
+              <div class="window-bar">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="chart"></div>
+              <div class="table"></div>
+            </div>
+          </div>
+          <div class="product-text reveal">
+            <h2>Antarmuka Intuitif</h2>
+            <p>
+              Rancang alur kerja, kelola data, dan kolaborasi dalam satu tempat.
+              Tidak perlu pelatihan rumit.
+            </p>
+            <ul class="checklist">
+              <li>Drag & drop builder</li>
+              <li>Integrasi API dengan 100+ layanan</li>
+              <li>Role-based access control</li>
+            </ul>
+            <a href="#pricing" class="btn btn-primary">Coba Sekarang</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section id="testimonials" class="section testimonials">
+        <div class="container">
+          <header class="section-header reveal">
+            <h2>Apa Kata Pengguna</h2>
+            <p>
+              Tim dari berbagai industri mengandalkan Lumina untuk skala yang
+              lebih cepat.
+            </p>
+          </header>
+          <div class="testi-grid">
+            <figure class="testi-card reveal">
+              <blockquote>
+                “Dalam 2 minggu, time-to-launch kami turun 60%. Antarmukanya
+                sungguh menyenangkan.”
+              </blockquote>
+              <figcaption><strong>Rani W.</strong> — PM di Nova</figcaption>
+            </figure>
+            <figure class="testi-card reveal">
+              <blockquote>
+                “Analitik real-time membantu kami memotong biaya pemasaran
+                hingga 25%.”
+              </blockquote>
+              <figcaption>
+                <strong>Hadi P.</strong> — Growth di Orion
+              </figcaption>
+            </figure>
+            <figure class="testi-card reveal">
+              <blockquote>
+                “Integrasi API-nya mulus. Tim dev kami sangat terbantu.”
+              </blockquote>
+              <figcaption>
+                <strong>Surya A.</strong> — Tech Lead di Helix
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pricing -->
+      <section id="pricing" class="section pricing">
+        <div class="container">
+          <header class="section-header reveal">
+            <h2>Paket Harga</h2>
+            <p>Pilih paket yang sesuai. Mulai gratis dan upgrade kapan saja.</p>
+            <div
+              class="billing-toggle"
+              role="group"
+              aria-label="Opsi penagihan"
+            >
+              <span>Bulanan</span>
+              <label class="switch">
+                <input
+                  type="checkbox"
+                  id="billingSwitch"
+                  aria-label="Toggle tahunan"
+                />
+                <span class="slider"></span>
+              </label>
+              <span>Tahunan <span class="save-badge">Hemat 20%</span></span>
+            </div>
+          </header>
+
+          <div class="pricing-grid">
+            <article class="price-card reveal">
+              <h3>Starter</h3>
+              <p class="subtitle">Untuk proyek pribadi</p>
+              <p class="price" data-monthly="0" data-yearly="0">
+                $0<span>/bln</span>
+              </p>
+              <ul class="features-list">
+                <li>Pengguna tunggal</li>
+                <li>Proyek tak terbatas</li>
+                <li>Dukungan komunitas</li>
+              </ul>
+              <a href="#cta" class="btn btn-secondary">Mulai Gratis</a>
+            </article>
+
+            <article class="price-card highlight reveal">
+              <div class="badge">Terpopuler</div>
+              <h3>Pro</h3>
+              <p class="subtitle">Untuk tim kecil</p>
+              <p class="price" data-monthly="19" data-yearly="15">
+                $19<span>/bln</span>
+              </p>
+              <ul class="features-list">
+                <li>Hingga 10 pengguna</li>
+                <li>Integrasi API premium</li>
+                <li>Dukungan email prioritas</li>
+              </ul>
+              <a href="#cta" class="btn btn-primary">Pilih Pro</a>
+            </article>
+
+            <article class="price-card reveal">
+              <h3>Business</h3>
+              <p class="subtitle">Untuk skala pertumbuhan</p>
+              <p class="price" data-monthly="49" data-yearly="39">
+                $49<span>/bln</span>
+              </p>
+              <ul class="features-list">
+                <li>Pengguna tak terbatas</li>
+                <li>SSO, RBAC, audit logs</li>
+                <li>Dukungan 24/7</li>
+              </ul>
+              <a href="#cta" class="btn btn-secondary">Hubungi Kami</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section id="faq" class="section faq">
+        <div class="container">
+          <header class="section-header reveal">
+            <h2>Pertanyaan Umum</h2>
+            <p>Jawaban ringkas untuk hal yang sering ditanyakan.</p>
+          </header>
+
+          <div class="faq-list">
+            <details class="faq-item reveal">
+              <summary>Apakah ada uji coba gratis?</summary>
+              <p>Ya. Anda dapat mencoba paket Starter tanpa biaya.</p>
+            </details>
+            <details class="faq-item reveal">
+              <summary>Bisakah upgrade atau downgrade kapan saja?</summary>
+              <p>
+                Tentu. Anda bisa mengubah paket kapan pun dari dashboard
+                billing.
+              </p>
+            </details>
+            <details class="faq-item reveal">
+              <summary>Bagaimana keamanan data saya?</summary>
+              <p>
+                Kami menerapkan enkripsi, kontrol akses ketat, dan audit
+                berkala.
+              </p>
+            </details>
+            <details class="faq-item reveal">
+              <summary>Apakah ada diskon untuk lembaga pendidikan?</summary>
+              <p>Ada. Silakan hubungi tim kami untuk penawaran khusus.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Form -->
+      <section id="cta" class="section cta">
+        <div class="container grid-2">
+          <div class="cta-text reveal">
+            <h2>Mulai Perjalanan Anda Hari Ini</h2>
+            <p>
+              Daftar untuk mendapatkan akses awal, tips pertumbuhan, dan
+              penawaran eksklusif.
+            </p>
+          </div>
+          <form class="cta-form reveal" id="ctaForm" novalidate>
+            <label for="name">Nama</label>
+            <input
+              id="name"
+              name="name"
+              type="text"
+              placeholder="Nama Anda"
+              required
+            />
+
+            <label for="email">Email</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="email@contoh.com"
+              required
+            />
+
+            <button type="submit" class="btn btn-primary">Daftar</button>
+            <p class="form-note">
+              Kami menghargai privasi Anda. Tidak ada spam.
+            </p>
+            <p
+              class="form-success"
+              id="formSuccess"
+              role="status"
+              aria-live="polite"
+            ></p>
+          </form>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="section contact">
+        <div class="container">
+          <header class="section-header reveal">
+            <h2>Hubungi Kami</h2>
+            <p>
+              Butuh bantuan atau ingin mendiskusikan kebutuhan khusus? Tim kami
+              siap membantu.
+            </p>
+          </header>
+          <div class="contact-grid">
+            <a
+              href="mailto:hello@lumina.app"
+              class="contact-item reveal"
+              aria-label="Email"
+            >
+              <span class="icon-mail"></span> hello@lumina.app
+            </a>
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener"
+              class="contact-item reveal"
+              aria-label="Twitter"
+            >
+              <span class="icon-twitter"></span> @lumina
+            </a>
+            <a
+              href="https://www.linkedin.com"
+              target="_blank"
+              rel="noopener"
+              class="contact-item reveal"
+              aria-label="LinkedIn"
+            >
+              <span class="icon-linkedin"></span> Lumina
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="foot-brand">
+          <img
+            src="assets/logo.svg"
+            alt=""
+            class="brand-logo"
+            width="24"
+            height="24"
+          />
+          <span class="brand-name">Lumina</span>
+          <p class="foot-desc">
+            Membantu tim meluncurkan lebih cepat dan tumbuh lebih cerdas.
+          </p>
+        </div>
+        <nav class="foot-nav" aria-label="Footer">
+          <a href="#features">Fitur</a>
+          <a href="#product">Produk</a>
+          <a href="#pricing">Harga</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact">Kontak</a>
+        </nav>
+        <div class="foot-legal">
+          <a href="#">Kebijakan Privasi</a>
+          <a href="#">Syarat Layanan</a>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>© <span id="year"></span> Lumina. Semua hak dilindungi.</p>
+        <button id="backToTop" class="back-to-top" aria-label="Kembali ke atas">
+          ↑
+        </button>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>

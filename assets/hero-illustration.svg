@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="640" height="480" viewBox="0 0 640 480" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Lumina Dashboard Illustration</title>
+  <desc id="desc">Ilustrasi jendela aplikasi dengan grafik dan tabel</desc>
+  <defs>
+    <linearGradient id="lineGrad" x1="80" y1="120" x2="560" y2="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0ea5e9"/>
+      <stop offset="1" stop-color="#22c55e"/>
+    </linearGradient>
+    <linearGradient id="bgCard" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0f172a" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#0b1220" stop-opacity="0.95"/>
+    </linearGradient>
+    <filter id="elev" x="-5%" y="-6%" width="110%" height="118%">
+      <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#0ea5e9" flood-opacity="0.08"/>
+    </filter>
+    <pattern id="grid" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0v24" stroke="#1e293b" stroke-opacity="0.55" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- Kartu jendela -->
+  <rect x="40" y="40" width="560" height="400" rx="16" fill="url(#bgCard)" stroke="#1e293b" stroke-width="1.2" filter="url(#elev)"/>
+
+  <!-- Bar atas jendela -->
+  <rect x="40" y="40" width="560" height="36" rx="16" fill="#111a2e"/>
+  <circle cx="60" cy="58" r="6" fill="#e11d48"/>
+  <circle cx="80" cy="58" r="6" fill="#f59e0b"/>
+  <circle cx="100" cy="58" r="6" fill="#10b981"/>
+
+  <!-- Area grafik -->
+  <rect x="72" y="96" width="496" height="168" rx="10" fill="#0f172a" stroke="#22324a" stroke-opacity="0.7"/>
+  <rect x="72" y="96" width="496" height="168" rx="10" fill="url(#grid)" opacity="0.28"/>
+
+  <!-- Grafik garis -->
+  <path d="M92 238C130 210 140 156 182 148C224 140 232 214 268 208C304 202 316 132 360 132C404 132 420 198 452 202C484 206 510 180 548 170" fill="none" stroke="url(#lineGrad)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Titik data -->
+  <g fill="#22d3ee">
+    <circle cx="182" cy="148" r="3.5"/>
+    <circle cx="268" cy="208" r="3.5"/>
+    <circle cx="360" cy="132" r="3.5"/>
+    <circle cx="452" cy="202" r="3.5"/>
+  </g>
+
+  <!-- Area tabel -->
+  <rect x="72" y="284" width="496" height="128" rx="10" fill="#0f172a" stroke="#22324a" stroke-opacity="0.7"/>
+  <!-- Header tabel -->
+  <rect x="72" y="284" width="496" height="36" rx="10" fill="#111a2e" opacity="0.9"/>
+  <rect x="84" y="292" width="120" height="20" rx="6" fill="#22d3ee" fill-opacity="0.2"/>
+  <rect x="216" y="292" width="120" height="20" rx="6" fill="#22d3ee" fill-opacity="0.2"/>
+  <rect x="348" y="292" width="120" height="20" rx="6" fill="#22d3ee" fill-opacity="0.2"/>
+
+  <!-- Baris tabel (placeholder) -->
+  <g fill="#22d3ee" fill-opacity="0.16">
+    <rect x="84" y="328" width="180" height="12" rx="6"/>
+    <rect x="276" y="328" width="112" height="12" rx="6"/>
+    <rect x="400" y="328" width="144" height="12" rx="6"/>
+
+    <rect x="84" y="354" width="160" height="12" rx="6"/>
+    <rect x="252" y="354" width="136" height="12" rx="6"/>
+    <rect x="400" y="354" width="102" height="12" rx="6"/>
+  </g>
+</svg>

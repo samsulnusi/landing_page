@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Lumina Logo Mark</title>
+  <desc id="desc">Tanda logo berbentuk permata gradien dengan kilau</desc>
+  <defs>
+    <linearGradient id="g2" x1="5" y1="3" x2="23" y2="25" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0ea5e9"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+  </defs>
+
+  <path d="M14 2.8c1.3 2.9 7.4 7.3 7.4 11.4 0 4-3.3 7.4-7.4 7.4s-7.4-3.3-7.4-7.4c0-4.1 6.1-8.5 7.4-11.4z" fill="url(#g2)"/>
+  <circle cx="19.6" cy="8.9" r="1.4" fill="#ffffff" fill-opacity="0.95"/>
+</svg>
