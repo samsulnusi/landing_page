@@ -748,3 +748,28 @@ body.light .back-to-top {
     grid-template-columns: 1fr;
   }
 }
+
+/* Offset untuk anchor section agar tidak tertutup header sticky saat klik menu */
+.section {
+  scroll-margin-top: 80px; /* sesuaikan dengan tinggi header nyata Anda */
+}
+
+/* Aksesibilitas: hormati preferensi reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+  /* Pastikan elemen yang semula di-reveal menjadi tampak tanpa animasi */
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+/* Fokus keyboard yang jelas (aksesibilitas) */
+:focus-visible {
+  outline: 3px solid var(--brand);
+  outline-offset: 2px;
+}
